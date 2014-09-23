@@ -1,0 +1,45 @@
+<template name="keyDetails">
+
+	<form role="form">
+	  <div class="form-group service">
+		<label for="service">Service</label>
+		<input type="text" class="form-control" id="service" data-service-id="{{_id}}" placeholder="Service name" value="{{name}}">
+	  </div>
+
+	  {{#each items}}
+
+	  <div class="input-group item">
+		<label for="{{name}}">{{name}}</label>
+	  	<div class="input-group">
+		<input type="text" class="form-control" id="{{name}}" placeholder="value" value="{{decrypt value}}">
+		<span class="input-group-btn">
+			<button class="btn btn-danger" type="button">
+				<i class="glyphicon glyphicon-remove"></i>
+			</button>
+		</span>
+	  	</div>
+	  </div>
+
+	  {{/each}}
+
+	  <div class="pull-right">
+		<button type="submit" class="btn btn-primary">add</button>
+		<button type="submit" class="btn btn-default">save</button>
+	  </div>
+	</form>
+
+	<div style="display: none">
+		<form id="keyDetailsAdd" role="form">
+		  <p class="lead">New item</p>
+		  <div class="form-group">
+			<label for="new-item-name">Name</label>
+			<input type="text" class="form-control new-item-name" placeholder="name">
+		  </div>
+		  <div class="form-group">
+			<label for="new-item-value">Value</label>
+			<input type="text" class="form-control new-item-value" placeholder="value">
+		  </div>
+		</form>
+	</div>
+
+</template>

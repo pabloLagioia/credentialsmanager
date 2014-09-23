@@ -1,0 +1,13 @@
+<template name="keyList">
+
+	<section>
+        {{> filter}}
+    </section>
+
+	<div class="list-group">
+		{{#each keys}}
+			<a href="{{pathFor 'keyDetails'}}" class="list-group-item">{{name}}</a>
+		{{/each}}
+	</div>
+	
+</template>
