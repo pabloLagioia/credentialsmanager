@@ -6,3 +6,5 @@ All the information is encrypted to keep them safe.
 
 ## How to run it locally
 Clone and run meteor then go to http://localhost:3000
+
+## 
