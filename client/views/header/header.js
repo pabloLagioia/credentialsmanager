@@ -26,4 +26,4 @@ Template.header.events = {
 		});
 
 	}
-};
+}
